@@ -9,6 +9,9 @@
 - name: start service
   service: name=mysqld state=started enabled=yes
 
+- name: install expect
+  yum: name=expect state=installed
+
 - name: copy mysql_secure_installation file
   copy: src=files/mysql_secure_installation.exp dest=/root/
 
