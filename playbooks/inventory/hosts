@@ -1,0 +1,4 @@
+lsir ansible_connection=ssh ansible_user=root ansible_host=xxx.xxx.xxx.xxx
+
+[all:vars]
+ansible_ssh_pass='password'
